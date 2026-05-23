@@ -32,6 +32,9 @@ jobs:
       - name: Run Codex code review
         id: run_codex
         uses: openai/codex-action@v1
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CODEX_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
 
