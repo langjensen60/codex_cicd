@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push *)",
+      "Bash(gh pr create --base develop --head feature/101-init-project --title 'Feature/101 init project' --body ' *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
